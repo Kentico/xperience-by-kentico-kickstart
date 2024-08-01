@@ -1,0 +1,39 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<cms.contentitemcommondata>
+  <ContentItemCommonDataContentItemID>
+    <CodeName>ContactUs-ol6heuts</CodeName>
+    <GUID>ab286127-eef6-47df-84ce-1c180448c38d</GUID>
+    <ObjectType>cms.contentitem</ObjectType>
+  </ContentItemCommonDataContentItemID>
+  <ContentItemCommonDataContentLanguageID>
+    <CodeName>en</CodeName>
+    <GUID>82b5e20c-b3df-4e73-8148-f1414664a931</GUID>
+    <ObjectType>cms.contentlanguage</ObjectType>
+  </ContentItemCommonDataContentLanguageID>
+  <ContentItemCommonDataFirstPublishedWhen>2024-08-01 15:25:36Z</ContentItemCommonDataFirstPublishedWhen>
+  <ContentItemCommonDataGUID>a9ec9da6-30dc-4538-a6c3-b1cfc6959656</ContentItemCommonDataGUID>
+  <ContentItemCommonDataIsLatest>True</ContentItemCommonDataIsLatest>
+  <ContentItemCommonDataLastPublishedWhen>2024-08-01 15:29:38Z</ContentItemCommonDataLastPublishedWhen>
+  <ContentItemCommonDataPageBuilderWidgets>
+    <![CDATA[{"editableAreas":[{"identifier":"areaMain","sections":[{"identifier":"73df0c94-68d8-447e-ab67-7bb6b9f53b40","type":"Kentico.DefaultSection","properties":null,"zones":[{"identifier":"290037e2-9b5f-4550-acec-b389b06c6d82","widgets":[{"identifier":"15900053-fa6b-4c13-af90-75304644125f","type":"Kentico.Widget.RichText","variants":[{"identifier":"f93d83ef-cdf2-46c4-a4d3-2f079df54a95","properties":{"content":"<p>Need to send us a message?</p><p>Use this form, and we'll get back to you at the provided email address!</p>"},"fieldIdentifiers":{"content":"8f49d1e5-c0ca-4e0c-937e-3c28c1971c6b"}}]},{"identifier":"1f596add-cf55-4aac-a2e9-6069d5771cf1","type":"Kentico.FormWidget","variants":[{"identifier":"c98cb6b1-49b5-4822-aa0d-b8b0632880a1","properties":{"selectedForm":[{"objectGuid":null,"objectCodeName":"ContactUs"}],"afterSubmitMode":"message","afterSubmitDisplayText":"Thanks! We'll get back to you soon!","afterSubmitRedirectToUrl":null,"afterSubmitRedirectToWebPage":[]},"fieldIdentifiers":{"selectedForm":"5070bc74-31bd-457b-bb2f-81513afe7ee6","afterSubmitMode":"63c0847e-6611-4c39-9166-a370db6afc1d","afterSubmitDisplayText":"0f3c03ea-313d-4e4d-be84-f82e09ed4d68","afterSubmitRedirectToUrl":"e7a79feb-4e00-46e6-90e1-b1dae3fc8a27","afterSubmitRedirectToWebPage":"892b6270-b60b-4f64-a79f-fe3930b7517b"}}]}]}],"fieldIdentifiers":{}}]}]}]]>
+  </ContentItemCommonDataPageBuilderWidgets>
+  <ContentItemCommonDataPageTemplateConfiguration>
+    <![CDATA[{"identifier":"Kickstart.LandingPagePageTemplate","properties":null,"fieldIdentifiers":{}}]]>
+  </ContentItemCommonDataPageTemplateConfiguration>
+  <ContentItemCommonDataVersionStatus>2</ContentItemCommonDataVersionStatus>
+  <ContentItemReferences>
+    <cms.contentitemreference>
+      <ContentItemReferenceGroupGUID>5f1c4e5b-85ed-4351-bc6c-b93c1e4a9e55</ContentItemReferenceGroupGUID>
+      <ContentItemReferenceGUID>23af7074-a65e-4b3f-9561-67cc1c21e130</ContentItemReferenceGUID>
+      <ContentItemReferenceSourceCommonDataID>
+        <GUID>a9ec9da6-30dc-4538-a6c3-b1cfc6959656</GUID>
+        <ObjectType>cms.contentitemcommondata</ObjectType>
+      </ContentItemReferenceSourceCommonDataID>
+      <ContentItemReferenceTargetItemID>
+        <CodeName>WelcomeSlogan-txgnyso4</CodeName>
+        <GUID>ea60c907-3fe5-49af-bbbb-257cd2ea54f7</GUID>
+        <ObjectType>cms.contentitem</ObjectType>
+      </ContentItemReferenceTargetItemID>
+    </cms.contentitemreference>
+  </ContentItemReferences>
+</cms.contentitemcommondata>

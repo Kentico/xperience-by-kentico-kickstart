@@ -1,0 +1,18 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<contentitemdata.kickstart.navigationmenu>
+  <ContentItemDataCommonDataID>
+    <GUID>507c8082-2b25-42fb-81d2-9ebfa0adbf62</GUID>
+    <ObjectType>cms.contentitemcommondata</ObjectType>
+    <Parent>
+      <CodeName>MainNavigation-v4c3er29</CodeName>
+      <GUID>31f25bfc-d5dc-4134-8c82-4473ea84964d</GUID>
+      <ObjectType>cms.contentitem</ObjectType>
+    </Parent>
+  </ContentItemDataCommonDataID>
+  <ContentItemDataGUID>48d6bc3a-1360-4357-a098-f33e6feb678e</ContentItemDataGUID>
+  <NavigationMenuCodeName>MainNavigation</NavigationMenuCodeName>
+  <NavigationMenuDisplayName>Main navigation</NavigationMenuDisplayName>
+  <NavigationMenuItems>
+    <![CDATA[[{"Identifier":"17ae8de4-f809-407f-9ecf-b605027d5988"},{"Identifier":"b4392fe9-4a71-49a3-81c7-2403655ab52c"}]]]>
+  </NavigationMenuItems>
+</contentitemdata.kickstart.navigationmenu>

@@ -1,0 +1,18 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<cms.websitechannel>
+  <WebsiteChannelChannelID>
+    <CodeName>KickstartPages</CodeName>
+    <GUID>fe61c0c4-c3e6-471c-9866-b6795d4f39e6</GUID>
+    <ObjectType>cms.channel</ObjectType>
+  </WebsiteChannelChannelID>
+  <WebsiteChannelDefaultCookieLevel>1000</WebsiteChannelDefaultCookieLevel>
+  <WebsiteChannelDomain>localhost:65342</WebsiteChannelDomain>
+  <WebsiteChannelGUID>c4cbb4ca-e87e-438f-aad1-bf32547f300f</WebsiteChannelGUID>
+  <WebsiteChannelHomePage>/Home</WebsiteChannelHomePage>
+  <WebsiteChannelPrimaryContentLanguageID>
+    <CodeName>en</CodeName>
+    <GUID>82b5e20c-b3df-4e73-8148-f1414664a931</GUID>
+    <ObjectType>cms.contentlanguage</ObjectType>
+  </WebsiteChannelPrimaryContentLanguageID>
+  <WebsiteChannelStoreFormerUrls>True</WebsiteChannelStoreFormerUrls>
+</cms.websitechannel>

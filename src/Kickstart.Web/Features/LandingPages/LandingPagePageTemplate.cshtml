@@ -1,0 +1,11 @@
+@using Kickstart.Web.Features.LandingPages
+
+@model TemplateViewModel
+
+@{
+    var templateModel = Model.GetTemplateModel<LandingPageViewModel>();
+}
+
+<h3>@templateModel.Message</h3>
+
+ <editable-area area-identifier="areaMain" />

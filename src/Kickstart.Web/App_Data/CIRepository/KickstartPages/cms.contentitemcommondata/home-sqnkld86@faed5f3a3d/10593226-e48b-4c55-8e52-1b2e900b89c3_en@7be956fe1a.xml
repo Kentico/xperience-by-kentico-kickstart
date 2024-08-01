@@ -1,0 +1,39 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<cms.contentitemcommondata>
+  <ContentItemCommonDataContentItemID>
+    <CodeName>Home-sqnkld86</CodeName>
+    <GUID>fb48a0ce-6c45-4580-a4f8-715413832d0f</GUID>
+    <ObjectType>cms.contentitem</ObjectType>
+  </ContentItemCommonDataContentItemID>
+  <ContentItemCommonDataContentLanguageID>
+    <CodeName>en</CodeName>
+    <GUID>82b5e20c-b3df-4e73-8148-f1414664a931</GUID>
+    <ObjectType>cms.contentlanguage</ObjectType>
+  </ContentItemCommonDataContentLanguageID>
+  <ContentItemCommonDataFirstPublishedWhen>2024-08-01 15:25:33Z</ContentItemCommonDataFirstPublishedWhen>
+  <ContentItemCommonDataGUID>10593226-e48b-4c55-8e52-1b2e900b89c3</ContentItemCommonDataGUID>
+  <ContentItemCommonDataIsLatest>True</ContentItemCommonDataIsLatest>
+  <ContentItemCommonDataLastPublishedWhen>2024-08-01 16:12:10Z</ContentItemCommonDataLastPublishedWhen>
+  <ContentItemCommonDataPageBuilderWidgets>
+    <![CDATA[{"editableAreas":[{"identifier":"areaMain","sections":[{"identifier":"d3badc04-9e8a-4e78-9907-d9ec00c6b746","type":"Kentico.DefaultSection","properties":null,"zones":[{"identifier":"d5ef5871-c143-45b9-977c-004987a05e00","widgets":[{"identifier":"8c9d2b0e-71af-4f26-b868-8cc0dd245d84","type":"Kentico.Widget.RichText","variants":[{"identifier":"e4e7daaf-0976-4fb5-8766-619e41b1db5b","properties":{"content":"<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p><table style=\"width: 100%\"><tbody><tr><td style=\"width: 50%\"><strong>Lorem</strong></td><td style=\"width: 50%\"><strong>Ipsum</strong></td></tr><tr><td style=\"width: 50%\">ipsum</td><td style=\"width: 50%\">lorem</td></tr></tbody></table>"},"fieldIdentifiers":{"content":"43119ee6-a652-4bde-9aed-1972b7a9c294"}}]}]}],"fieldIdentifiers":{}}]}]}]]>
+  </ContentItemCommonDataPageBuilderWidgets>
+  <ContentItemCommonDataPageTemplateConfiguration>
+    <![CDATA[{"identifier":"Kickstart.LandingPagePageTemplate","properties":null,"fieldIdentifiers":{}}]]>
+  </ContentItemCommonDataPageTemplateConfiguration>
+  <ContentItemCommonDataVersionStatus>2</ContentItemCommonDataVersionStatus>
+  <ContentItemReferences>
+    <cms.contentitemreference>
+      <ContentItemReferenceGroupGUID>5f1c4e5b-85ed-4351-bc6c-b93c1e4a9e55</ContentItemReferenceGroupGUID>
+      <ContentItemReferenceGUID>79125710-50b3-49b8-8a4c-1a6a1172a287</ContentItemReferenceGUID>
+      <ContentItemReferenceSourceCommonDataID>
+        <GUID>10593226-e48b-4c55-8e52-1b2e900b89c3</GUID>
+        <ObjectType>cms.contentitemcommondata</ObjectType>
+      </ContentItemReferenceSourceCommonDataID>
+      <ContentItemReferenceTargetItemID>
+        <CodeName>WelcomeSlogan-txgnyso4</CodeName>
+        <GUID>ea60c907-3fe5-49af-bbbb-257cd2ea54f7</GUID>
+        <ObjectType>cms.contentitem</ObjectType>
+      </ContentItemReferenceTargetItemID>
+    </cms.contentitemreference>
+  </ContentItemReferences>
+</cms.contentitemcommondata>

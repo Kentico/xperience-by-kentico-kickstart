@@ -1,0 +1,18 @@
+@using Kickstart.Web.Features.Navigation
+
+@model NavigationMenuViewModel
+
+@if(Model != null)
+{
+    <nav>
+        <ul class="navbar-nav nav-underline">
+            @foreach(var item in Model.Items)
+            {
+                <li class="nav-item">
+                    <a href="@item.Url" class="nav-link link-light">@item.Title</a>
+                </li>
+            }
+        </ul>
+    </nav>
+
+}

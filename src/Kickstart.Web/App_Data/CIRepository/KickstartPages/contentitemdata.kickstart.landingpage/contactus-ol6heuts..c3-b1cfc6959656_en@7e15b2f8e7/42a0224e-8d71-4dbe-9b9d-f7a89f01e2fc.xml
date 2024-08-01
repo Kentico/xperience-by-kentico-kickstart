@@ -1,0 +1,16 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<contentitemdata.kickstart.landingpage>
+  <ContentItemDataCommonDataID>
+    <GUID>a9ec9da6-30dc-4538-a6c3-b1cfc6959656</GUID>
+    <ObjectType>cms.contentitemcommondata</ObjectType>
+    <Parent>
+      <CodeName>ContactUs-ol6heuts</CodeName>
+      <GUID>ab286127-eef6-47df-84ce-1c180448c38d</GUID>
+      <ObjectType>cms.contentitem</ObjectType>
+    </Parent>
+  </ContentItemDataCommonDataID>
+  <ContentItemDataGUID>42a0224e-8d71-4dbe-9b9d-f7a89f01e2fc</ContentItemDataGUID>
+  <LandingPageSlogan>
+    <![CDATA[[{"Identifier":"ea60c907-3fe5-49af-bbbb-257cd2ea54f7"}]]]>
+  </LandingPageSlogan>
+</contentitemdata.kickstart.landingpage>

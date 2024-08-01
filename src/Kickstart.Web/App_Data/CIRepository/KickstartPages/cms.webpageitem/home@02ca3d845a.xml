@@ -1,0 +1,21 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<cms.webpageitem>
+  <WebPageItemContentItemID>
+    <CodeName>Home-sqnkld86</CodeName>
+    <GUID>fb48a0ce-6c45-4580-a4f8-715413832d0f</GUID>
+    <ObjectType>cms.contentitem</ObjectType>
+  </WebPageItemContentItemID>
+  <WebPageItemGUID>531a27a2-503b-461b-b120-57e3f4ec4adf</WebPageItemGUID>
+  <WebPageItemName>Home-sqnkld86</WebPageItemName>
+  <WebPageItemOrder>2</WebPageItemOrder>
+  <WebPageItemTreePath>/Home</WebPageItemTreePath>
+  <WebPageItemWebsiteChannelID>
+    <GUID>c4cbb4ca-e87e-438f-aad1-bf32547f300f</GUID>
+    <ObjectType>cms.websitechannel</ObjectType>
+    <Parent>
+      <CodeName>KickstartPages</CodeName>
+      <GUID>fe61c0c4-c3e6-471c-9866-b6795d4f39e6</GUID>
+      <ObjectType>cms.channel</ObjectType>
+    </Parent>
+  </WebPageItemWebsiteChannelID>
+</cms.webpageitem>

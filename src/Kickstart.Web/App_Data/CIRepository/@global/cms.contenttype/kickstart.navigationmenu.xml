@@ -1,0 +1,56 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<cms.contenttype>
+  <ClassContentTypeType>Reusable</ClassContentTypeType>
+  <ClassDisplayName>Navigation menu</ClassDisplayName>
+  <ClassFormDefinition>
+    <form>
+      <field column="ContentItemDataID" columntype="integer" enabled="true" guid="00cdd0f0-38ba-41db-bc58-e4f1146a6c20" isPK="true" />
+      <field column="ContentItemDataCommonDataID" columntype="integer" enabled="true" guid="c550c358-a643-4ff3-ae02-b720072bb4c2" refobjtype="cms.contentitemcommondata" reftype="Required" system="true" />
+      <field column="ContentItemDataGUID" columntype="guid" enabled="true" guid="b1224f9a-5202-4c55-aaa8-cbb8669ef933" isunique="true" system="true" />
+      <field column="NavigationMenuDisplayName" columnprecision="0" columnsize="200" columntype="text" enabled="true" guid="29218c64-5fd7-41f1-acfb-d016ceb09934" visible="true">
+        <properties>
+          <explanationtextashtml>False</explanationtextashtml>
+          <fieldcaption>Display name</fieldcaption>
+          <fielddescriptionashtml>False</fielddescriptionashtml>
+        </properties>
+        <settings>
+          <controlname>Kentico.Administration.TextInput</controlname>
+        </settings>
+      </field>
+      <field column="NavigationMenuCodeName" columnprecision="0" columnsize="200" columntype="text" enabled="true" guid="399287a9-4cc4-44fd-b665-65ad81cd08f6" visible="true">
+        <properties>
+          <explanationtextashtml>False</explanationtextashtml>
+          <fieldcaption>Code name</fieldcaption>
+          <fielddescriptionashtml>False</fielddescriptionashtml>
+        </properties>
+        <settings>
+          <controlname>Kentico.Administration.CodeName</controlname>
+          <HasAutomaticCodeNameGenerationOption>False</HasAutomaticCodeNameGenerationOption>
+          <IsCollapsed>False</IsCollapsed>
+        </settings>
+      </field>
+      <field allowempty="true" column="NavigationMenuItems" columnprecision="0" columntype="contentitemreference" enabled="true" guid="43204d13-3721-474a-8d94-6ab8d0383050" visible="true">
+        <properties>
+          <explanationtextashtml>False</explanationtextashtml>
+          <fieldcaption>Items</fieldcaption>
+          <fielddescriptionashtml>False</fielddescriptionashtml>
+        </properties>
+        <settings>
+          <AllowedContentItemTypeIdentifiers>
+            <![CDATA[["a7390eda-8c9b-4d08-a4ee-a519bea12c2f"]]]>
+          </AllowedContentItemTypeIdentifiers>
+          <controlname>Kentico.Administration.ContentItemSelector</controlname>
+          <SelectionType>contentTypes</SelectionType>
+        </settings>
+      </field>
+    </form>
+  </ClassFormDefinition>
+  <ClassGUID>87b2ffa0-b10e-4fea-9ee7-844aa555161d</ClassGUID>
+  <ClassHasUnmanagedDbSchema>False</ClassHasUnmanagedDbSchema>
+  <ClassIconClass>xp-list-bullets</ClassIconClass>
+  <ClassName>Kickstart.NavigationMenu</ClassName>
+  <ClassShortName>KickstartNavigationMenu</ClassShortName>
+  <ClassTableName>Kickstart_NavigationMenu</ClassTableName>
+  <ClassType>Content</ClassType>
+  <ClassWebPageHasUrl>False</ClassWebPageHasUrl>
+</cms.contenttype>

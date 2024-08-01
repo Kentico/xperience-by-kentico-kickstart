@@ -1,0 +1,14 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<contentitemdata.kickstart.slogan>
+  <ContentItemDataCommonDataID>
+    <GUID>f12ca513-c0d3-4a6e-9fb6-cc417212bd92</GUID>
+    <ObjectType>cms.contentitemcommondata</ObjectType>
+    <Parent>
+      <CodeName>WelcomeSlogan-txgnyso4</CodeName>
+      <GUID>ea60c907-3fe5-49af-bbbb-257cd2ea54f7</GUID>
+      <ObjectType>cms.contentitem</ObjectType>
+    </Parent>
+  </ContentItemDataCommonDataID>
+  <ContentItemDataGUID>6e5b3c1b-508d-4541-aae8-76d8c64a634c</ContentItemDataGUID>
+  <SloganText>Welcome to the Kickstart project!</SloganText>
+</contentitemdata.kickstart.slogan>

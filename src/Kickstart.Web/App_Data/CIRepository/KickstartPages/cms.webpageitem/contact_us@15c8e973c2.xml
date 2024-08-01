@@ -1,0 +1,21 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<cms.webpageitem>
+  <WebPageItemContentItemID>
+    <CodeName>ContactUs-ol6heuts</CodeName>
+    <GUID>ab286127-eef6-47df-84ce-1c180448c38d</GUID>
+    <ObjectType>cms.contentitem</ObjectType>
+  </WebPageItemContentItemID>
+  <WebPageItemGUID>681d65ef-a94c-4bbd-b8e6-e59b375ab848</WebPageItemGUID>
+  <WebPageItemName>ContactUs-ol6heuts</WebPageItemName>
+  <WebPageItemOrder>3</WebPageItemOrder>
+  <WebPageItemTreePath>/Contact_us</WebPageItemTreePath>
+  <WebPageItemWebsiteChannelID>
+    <GUID>c4cbb4ca-e87e-438f-aad1-bf32547f300f</GUID>
+    <ObjectType>cms.websitechannel</ObjectType>
+    <Parent>
+      <CodeName>KickstartPages</CodeName>
+      <GUID>fe61c0c4-c3e6-471c-9866-b6795d4f39e6</GUID>
+      <ObjectType>cms.channel</ObjectType>
+    </Parent>
+  </WebPageItemWebsiteChannelID>
+</cms.webpageitem>

@@ -1,0 +1,16 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<contentitemdata.kickstart.landingpage>
+  <ContentItemDataCommonDataID>
+    <GUID>10593226-e48b-4c55-8e52-1b2e900b89c3</GUID>
+    <ObjectType>cms.contentitemcommondata</ObjectType>
+    <Parent>
+      <CodeName>Home-sqnkld86</CodeName>
+      <GUID>fb48a0ce-6c45-4580-a4f8-715413832d0f</GUID>
+      <ObjectType>cms.contentitem</ObjectType>
+    </Parent>
+  </ContentItemDataCommonDataID>
+  <ContentItemDataGUID>92d55de1-079c-4d6a-9a89-3861a2938b68</ContentItemDataGUID>
+  <LandingPageSlogan>
+    <![CDATA[[{"Identifier":"ea60c907-3fe5-49af-bbbb-257cd2ea54f7"}]]]>
+  </LandingPageSlogan>
+</contentitemdata.kickstart.landingpage>

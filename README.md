@@ -15,13 +15,11 @@ It contains a simple navigation menu and two pages that utilize reusable content
 
 ## Quick Start
 
-1. Download and restore the **.bak** file from the [Database](./database/) folder to your SQL server, or install a new Xperience by Kentico database of version **29.3.0**.
-1. Download the repository and add a `CMSConnectionString` property that points to this database to the `ConnectionStrings` section of [appsettings.json](./src/Kickstart.Web/appsettings.json).
+1. Download and restore the **.bak** file from the [database](./database/) folder to your SQL server, or install a new Xperience by Kentico database, version **29.3.0**.
+1. Clone or download the repository and edit [appsettings.json](./src/Kickstart.Web/appsettings.json).
+    - Add a `CMSConnectionString` property that points to your database to the `ConnectionStrings` section.
 1. Use the `dotnet run --kxp-ci-restore` command from the [Kickstart.Web](./src/Kickstart.Web/) directory to populate the database.
-
-## Full Instructions
-
-View the [Usage Guide](./docs/Usage-Guide.md) for more detailed instructions.
+1. Log in under the **~/admin** path with the username **administrator** and the password **kickstart**
 
 ## License
 

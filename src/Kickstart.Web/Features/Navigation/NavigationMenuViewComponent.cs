@@ -31,7 +31,7 @@ public class NavigationMenuViewComponent : ViewComponent
 
         if (menu == null)
         {
-            return View(null);
+            return View("~/Features/Navigation/NavigationMenuViewComponent.cshtml", new NavigationMenuViewModel());
         }
 
         var model = await navigationService.GetNavigationMenuViewModel(menu);

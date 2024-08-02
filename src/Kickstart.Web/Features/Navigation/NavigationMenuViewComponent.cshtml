@@ -2,7 +2,7 @@
 
 @model NavigationMenuViewModel
 
-@if (Model != null)
+@if (Model?.Items?.Any() ?? false)
 {
     <nav>
         <ul class="navbar-nav nav-underline">

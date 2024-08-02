@@ -1,6 +1,6 @@
-using System;
 using System.Linq;
 using System.Threading.Tasks;
+using Microsoft.IdentityModel.Tokens;
 using CMS.Websites;
 using Kentico.Content.Web.Mvc.Routing;
 
@@ -18,13 +18,13 @@ public class NavigationService : INavigationService
     }
     public async Task<NavigationItemViewModel> GetNavigationItemViewModel(NavigationItem navigationItem)
     {
-        if (navigationItem == null || navigationItem.NavigationItemTarget == null || !navigationItem.NavigationItemTarget.Any())
+        if (navigationItem?.NavigationItemTarget?.IsNullOrEmpty() ?? true)
         {
             return null;
         }
 
         var targetGuid = navigationItem.NavigationItemTarget.FirstOrDefault().WebPageGuid;
-        
+
         var targetUrl = await webPageUrlRetriever.Retrieve(targetGuid, preferredLanguageRetriever.Get());
 
         return new NavigationItemViewModel
@@ -36,7 +36,7 @@ public class NavigationService : INavigationService
 
     public async Task<NavigationMenuViewModel> GetNavigationMenuViewModel(NavigationMenu navigationMenu)
     {
-        if (navigationMenu == null || navigationMenu.NavigationMenuItems == null || !navigationMenu.NavigationMenuItems.Any())
+        if (navigationMenu?.NavigationMenuItems?.IsNullOrEmpty() ?? true)
         {
             return null;
         }

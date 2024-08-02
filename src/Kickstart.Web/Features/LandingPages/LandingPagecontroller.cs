@@ -1,14 +1,13 @@
+using System.Linq;
+using System.Threading.Tasks;
+using Microsoft.AspNetCore.Mvc;
 using CMS.ContentEngine;
-using CMS.Websites.Routing;
 using CMS.Websites;
+using CMS.Websites.Routing;
 using Kentico.Content.Web.Mvc;
 using Kentico.Content.Web.Mvc.Routing;
 using Kentico.PageBuilder.Web.Mvc.PageTemplates;
-using Microsoft.AspNetCore.Mvc;
 using Kickstart;
-using System.Threading.Tasks;
-using System.Collections.Generic;
-using System.Linq;
 
 [assembly: RegisterWebPageRoute(
     contentTypeName: LandingPage.CONTENT_TYPE_NAME,
@@ -47,7 +46,7 @@ public class LandingPageController : Controller
                                 )
                             .InLanguage(preferredLanguageRetriever.Get());
 
-        IEnumerable<LandingPage> pages = await contentQueryExecutor.GetMappedWebPageResult<LandingPage>(builder);
+        var pages = await contentQueryExecutor.GetMappedWebPageResult<LandingPage>(builder);
 
         var model = LandingPageViewModel.GetViewModel(pages.FirstOrDefault());
         return new TemplateResult(model);

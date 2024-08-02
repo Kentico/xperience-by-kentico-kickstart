@@ -1,5 +1,3 @@
-using Kickstart;
-
 namespace Kickstart.Web.Features.Navigation
 {
     public class NavigationItemViewModel
@@ -7,7 +5,5 @@ namespace Kickstart.Web.Features.Navigation
         public string Title { get; set; }
 
         public string Url { get; set; }
-
-        
     }
 }

@@ -1,9 +1,9 @@
 using System.Linq;
 using System.Threading.Tasks;
+using Microsoft.AspNetCore.Mvc;
 using CMS.ContentEngine;
 using CMS.Websites.Routing;
 using Kentico.Content.Web.Mvc.Routing;
-using Microsoft.AspNetCore.Mvc;
 
 namespace Kickstart.Web.Features.Navigation;
 public class NavigationMenuViewComponent : ViewComponent
@@ -27,7 +27,7 @@ public class NavigationMenuViewComponent : ViewComponent
 
     public async Task<IViewComponentResult> InvokeAsync(string navigationMenuName)
     {
-        var menu = await retrieveMenu(navigationMenuName);
+        var menu = await RetrieveMenu(navigationMenuName);
 
         if (menu == null)
         {
@@ -39,7 +39,7 @@ public class NavigationMenuViewComponent : ViewComponent
         return View("~/Features/Navigation/NavigationMenuViewComponent.cshtml", model);
     }
 
-    private async Task<NavigationMenu> retrieveMenu(string navigationMenuCodeName)
+    private async Task<NavigationMenu> RetrieveMenu(string navigationMenuCodeName)
     {
         var builder = new ContentItemQueryBuilder()
             .ForContentType(NavigationMenu.CONTENT_TYPE_NAME,
@@ -47,7 +47,7 @@ public class NavigationMenuViewComponent : ViewComponent
                 .Where(where => where.WhereEquals(nameof(NavigationMenu.NavigationMenuCodeName), navigationMenuCodeName))
                 .WithLinkedItems(2))
             .InLanguage(preferredLanguageRetriever.Get());
-        
+
         var queryExecutorOptions = new ContentQueryExecutionOptions
         {
             ForPreview = webSiteChannelContext.IsPreview

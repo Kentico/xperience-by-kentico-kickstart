@@ -4,18 +4,11 @@ namespace Kickstart.Web.Features.LandingPages;
 
 public class LandingPageViewModel
 {
-    public string Message { get; set; }
+    public string Message { get; set; } = string.Empty;
 
-    public static LandingPageViewModel GetViewModel(LandingPage landingPage)
-    {
-        if (landingPage == null)
+    public static LandingPageViewModel GetViewModel(LandingPage landingPage) =>
+        new()
         {
-            return new LandingPageViewModel();
-        }
-        
-        return new LandingPageViewModel
-        {
-            Message = landingPage.LandingPageSlogan.FirstOrDefault()?.SloganText
+            Message = landingPage?.LandingPageSlogan.FirstOrDefault()?.SloganText ?? string.Empty
         };
-    }
 }

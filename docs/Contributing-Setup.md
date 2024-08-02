@@ -6,7 +6,7 @@ The requirements to setup, develop, and build this project are listed below.
 
 ### .NET Runtime
 
-.NET SDK 7.0 or newer
+.NET SDK 8.0 or newer
 
 - <https://dotnet.microsoft.com/en-us/download/dotnet/8.0>
 - See `global.json` file for specific SDK requirements
@@ -25,9 +25,9 @@ The requirements to setup, develop, and build this project are listed below.
 
 ### Database
 
-SQL Server 2019 or newer compatible database
+SQL Server 2022 or newer compatible database
 
-- [SQL Server Linux](https://learn.microsoft.com/en-us/sql/linux/sql-server-linux-setup?view=sql-server-ver15)
+- [SQL Server Linux](https://learn.microsoft.com/en-us/sql/linux/sql-server-linux-setup?view=sql-server-ver16)
 - [Azure SQL Edge](https://learn.microsoft.com/en-us/azure/azure-sql-edge/disconnected-deployment)
 
 ### SQL Editor

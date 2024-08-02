@@ -1,10 +1,12 @@
-﻿using Microsoft.AspNetCore.Builder;
-using Microsoft.Extensions.DependencyInjection;
-using Kentico.Content.Web.Mvc.Routing;
+﻿using Kentico.Content.Web.Mvc.Routing;
 using Kentico.PageBuilder.Web.Mvc;
 using Kentico.Web.Mvc;
+
 using Kickstart;
 using Kickstart.Web.Features.Navigation;
+
+using Microsoft.AspNetCore.Builder;
+using Microsoft.Extensions.DependencyInjection;
 
 var builder = WebApplication.CreateBuilder(args);
 

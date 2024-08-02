@@ -1,13 +1,17 @@
 using System.Linq;
 using System.Threading.Tasks;
-using Microsoft.AspNetCore.Mvc;
+
 using CMS.ContentEngine;
 using CMS.Websites;
 using CMS.Websites.Routing;
+
 using Kentico.Content.Web.Mvc;
 using Kentico.Content.Web.Mvc.Routing;
 using Kentico.PageBuilder.Web.Mvc.PageTemplates;
+
 using Kickstart;
+
+using Microsoft.AspNetCore.Mvc;
 
 [assembly: RegisterWebPageRoute(
     contentTypeName: LandingPage.CONTENT_TYPE_NAME,

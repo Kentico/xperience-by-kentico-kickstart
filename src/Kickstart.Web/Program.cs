@@ -1,8 +1,10 @@
 ﻿using Kentico.Content.Web.Mvc.Routing;
 using Kentico.PageBuilder.Web.Mvc;
 using Kentico.Web.Mvc;
+
 using Kickstart;
 using Kickstart.Web.Features.Navigation;
+
 using Microsoft.AspNetCore.Builder;
 using Microsoft.Extensions.DependencyInjection;
 
@@ -12,7 +14,8 @@ var builder = WebApplication.CreateBuilder(args);
 // Enable desired Kentico Xperience features
 builder.Services.AddKentico(features =>
 {
-    features.UsePageBuilder(new PageBuilderOptions {
+    features.UsePageBuilder(new PageBuilderOptions
+    {
         ContentTypeNames = [
             LandingPage.CONTENT_TYPE_NAME,
         ]

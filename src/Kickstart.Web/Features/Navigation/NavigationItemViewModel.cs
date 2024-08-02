@@ -1,13 +1,7 @@
-using Kickstart;
-
-namespace Kickstart.Web.Features.Navigation
+namespace Kickstart.Web.Features.Navigation;
+public class NavigationItemViewModel
 {
-    public class NavigationItemViewModel
-    {
-        public string Title { get; set; }
+    public string Title { get; set; }
 
-        public string Url { get; set; }
-
-        
-    }
+    public string Url { get; set; }
 }

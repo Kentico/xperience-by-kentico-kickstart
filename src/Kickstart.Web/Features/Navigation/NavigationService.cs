@@ -13,12 +13,14 @@ public class NavigationService : INavigationService
 {
     private readonly IWebPageUrlRetriever webPageUrlRetriever;
     private readonly IPreferredLanguageRetriever preferredLanguageRetriever;
+
     public NavigationService(IWebPageUrlRetriever webPageUrlRetriever,
     IPreferredLanguageRetriever preferredLanguageRetriever)
     {
         this.webPageUrlRetriever = webPageUrlRetriever;
         this.preferredLanguageRetriever = preferredLanguageRetriever;
     }
+
     public async Task<NavigationItemViewModel> GetNavigationItemViewModel(NavigationItem navigationItem)
     {
         if (navigationItem?.NavigationItemTarget?.IsNullOrEmpty() ?? true)

@@ -28,9 +28,9 @@ public class NavigationMenuViewComponent : ViewComponent
         this.navigationService = navigationService;
     }
 
-    public async Task<IViewComponentResult> InvokeAsync(string navigationMenuName)
+    public async Task<IViewComponentResult> InvokeAsync(string navigationMenuCodeName)
     {
-        var menu = await RetrieveMenu(navigationMenuName);
+        var menu = await RetrieveMenu(navigationMenuCodeName);
 
         if (menu == null)
         {

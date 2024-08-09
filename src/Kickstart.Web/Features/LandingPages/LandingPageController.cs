@@ -50,7 +50,12 @@ public class LandingPageController : Controller
                                 )
                             .InLanguage(preferredLanguageRetriever.Get());
 
-        var pages = await contentQueryExecutor.GetMappedWebPageResult<LandingPage>(builder);
+        var queryExecutorOptions = new ContentQueryExecutionOptions
+        {
+            ForPreview = webSiteChannelContext.IsPreview
+        };
+
+        var pages = await contentQueryExecutor.GetMappedWebPageResult<LandingPage>(builder, queryExecutorOptions);
 
         var model = LandingPageViewModel.GetViewModel(pages.FirstOrDefault());
         return new TemplateResult(model);

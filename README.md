@@ -2,7 +2,7 @@
 
 ## Description
 
-The src folder of this repository represents what you should see if you follow along with the steps of the [Kickstart for developers](https://docs.kentico.com/guides/development). **!!! ADD LINK ONCE TUTOTIAL EXISTS**
+The src folder of this repository represents what you should see if you follow along with the steps of the [Kickstart for developers](https://docs.kentico.com/tutorial/developer-tutorial).
 
 It contains a simple navigation menu and two pages that utilize reusable content items.
 

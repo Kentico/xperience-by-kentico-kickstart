@@ -36,7 +36,7 @@ namespace Kickstart
 
 
 		/// <summary>
-		/// LandingPageContent.
+		/// LandingPageSlogan.
 		/// </summary>
 		public IEnumerable<Slogan> LandingPageSlogan { get; set; }
 	}

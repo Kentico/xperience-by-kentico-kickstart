@@ -18,6 +18,7 @@ using Microsoft.AspNetCore.Mvc;
     controllerType: typeof(Kickstart.Web.Features.LandingPages.LandingPageController))]
 
 namespace Kickstart.Web.Features.LandingPages;
+
 public class LandingPageController : Controller
 {
     private readonly IContentQueryExecutor contentQueryExecutor;

@@ -9,6 +9,7 @@ using Kentico.Content.Web.Mvc.Routing;
 using Microsoft.AspNetCore.Mvc;
 
 namespace Kickstart.Web.Features.Navigation;
+
 public class NavigationMenuViewComponent : ViewComponent
 {
     private readonly IContentQueryExecutor contentQueryExecutor;
@@ -44,12 +45,21 @@ public class NavigationMenuViewComponent : ViewComponent
 
     private async Task<NavigationMenu> RetrieveMenu(string navigationMenuCodeName)
     {
+        // var builder = new ContentItemQueryBuilder()
+        //     .ForContentTypes(config => config
+        //         .OfContentType(NavigationMenu.CONTENT_TYPE_NAME)
+        //         .WithWebPageData()
+        //         .WithLinkedItems(4))
+        //     // .Parameters(outerParams => outerParams.Where(where => where.WhereEquals(nameof(NavigationMenu.NavigationMenuCodeName), navigationMenuCodeName)))
+        //     .InLanguage(preferredLanguageRetriever.Get());
+
         var builder = new ContentItemQueryBuilder()
             .ForContentType(NavigationMenu.CONTENT_TYPE_NAME,
-            config => config
-                .Where(where => where.WhereEquals(nameof(NavigationMenu.NavigationMenuCodeName), navigationMenuCodeName))
-                .WithLinkedItems(2))
+                config => config
+                    .Where(where => where.WhereEquals(nameof(NavigationMenu.NavigationMenuCodeName), navigationMenuCodeName))
+                    .WithLinkedItems(2))
             .InLanguage(preferredLanguageRetriever.Get());
+
 
         var queryExecutorOptions = new ContentQueryExecutionOptions
         {

@@ -1,7 +1,9 @@
 using System.Linq;
 using System.Threading.Tasks;
 
+using CMS.ContentEngine;
 using CMS.Websites;
+using CMS.Websites.Routing;
 
 using Kentico.Content.Web.Mvc.Routing;
 
@@ -11,14 +13,19 @@ namespace Kickstart.Web.Features.Navigation;
 
 public class NavigationService : INavigationService
 {
-    private readonly IWebPageUrlRetriever webPageUrlRetriever;
     private readonly IPreferredLanguageRetriever preferredLanguageRetriever;
+    private readonly IContentQueryExecutor contentQueryExecutor;
+    private readonly IWebsiteChannelContext webSiteChannelContext;
 
-    public NavigationService(IWebPageUrlRetriever webPageUrlRetriever,
-    IPreferredLanguageRetriever preferredLanguageRetriever)
+
+
+    public NavigationService(IPreferredLanguageRetriever preferredLanguageRetriever,
+    IContentQueryExecutor contentQueryExecutor,
+    IWebsiteChannelContext webSiteChannelContext)
     {
-        this.webPageUrlRetriever = webPageUrlRetriever;
         this.preferredLanguageRetriever = preferredLanguageRetriever;
+        this.contentQueryExecutor = contentQueryExecutor;
+        this.webSiteChannelContext = webSiteChannelContext;
     }
 
     public async Task<NavigationItemViewModel> GetNavigationItemViewModel(NavigationItem navigationItem)
@@ -28,9 +35,20 @@ public class NavigationService : INavigationService
             return null;
         }
 
-        var targetGuid = navigationItem.NavigationItemTarget.FirstOrDefault().WebPageGuid;
+        var targetContentItemGuid = navigationItem.NavigationItemTarget.FirstOrDefault().SystemFields.ContentItemGUID;
 
-        var targetUrl = await webPageUrlRetriever.Retrieve(targetGuid, preferredLanguageRetriever.Get());
+        var builder = new ContentItemQueryBuilder();
+
+        builder
+            .ForContentType(LandingPage.CONTENT_TYPE_NAME, subqueryParameters => subqueryParameters
+                .ForWebsite(webSiteChannelContext.WebsiteChannelName)
+                .UrlPathColumns()
+                .Where(where => where.WhereEquals(nameof(ContentItemFields.ContentItemGUID), targetContentItemGuid)))
+            .InLanguage(preferredLanguageRetriever.Get());
+
+        var targetLandingPage = (await contentQueryExecutor.GetMappedWebPageResult<LandingPage>(builder)).FirstOrDefault();
+
+        var targetUrl = targetLandingPage.GetUrl();
 
         return new NavigationItemViewModel
         {
@@ -46,7 +64,8 @@ public class NavigationService : INavigationService
             return null;
         }
 
-        var menuItems = await Task.WhenAll(navigationMenu.NavigationMenuItems.Select(GetNavigationItemViewModel));
+        var menuItems = (await Task.WhenAll(navigationMenu.NavigationMenuItems.Select(GetNavigationItemViewModel)))
+            .Where(x => x != null);
 
         return new NavigationMenuViewModel
         {

@@ -38,7 +38,7 @@
   </FormClassID>
   <FormDisplayName>Contact us</FormDisplayName>
   <FormGUID>7d08fae1-e765-40a4-8471-5838621f7027</FormGUID>
-  <FormItems>0</FormItems>
+  <FormItems>2</FormItems>
   <FormLogActivity>True</FormLogActivity>
   <FormName>ContactUs</FormName>
 </cms.form>

@@ -27,6 +27,7 @@
   <ClassHasUnmanagedDbSchema>False</ClassHasUnmanagedDbSchema>
   <ClassIconClass>xp-market</ClassIconClass>
   <ClassName>Kickstart.LandingPage</ClassName>
+  <ClassShortName>KickstartLandingPage</ClassShortName>
   <ClassTableName>Kickstart_LandingPage</ClassTableName>
   <ClassType>Content</ClassType>
   <ClassWebPageHasUrl>True</ClassWebPageHasUrl>

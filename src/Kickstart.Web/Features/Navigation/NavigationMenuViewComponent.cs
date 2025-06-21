@@ -38,26 +38,18 @@ public class NavigationMenuViewComponent : ViewComponent
             return View("~/Features/Navigation/NavigationMenuViewComponent.cshtml", new NavigationMenuViewModel());
         }
 
-        var model = await navigationService.GetNavigationMenuViewModel(menu);
+        var model = navigationService.GetNavigationMenuViewModel(menu);
 
         return View("~/Features/Navigation/NavigationMenuViewComponent.cshtml", model);
     }
 
     private async Task<NavigationMenu> RetrieveMenu(string navigationMenuCodeName)
     {
-        // var builder = new ContentItemQueryBuilder()
-        //     .ForContentTypes(config => config
-        //         .OfContentType(NavigationMenu.CONTENT_TYPE_NAME)
-        //         .WithWebPageData()
-        //         .WithLinkedItems(4))
-        //     // .Parameters(outerParams => outerParams.Where(where => where.WhereEquals(nameof(NavigationMenu.NavigationMenuCodeName), navigationMenuCodeName)))
-        //     .InLanguage(preferredLanguageRetriever.Get());
-
         var builder = new ContentItemQueryBuilder()
             .ForContentType(NavigationMenu.CONTENT_TYPE_NAME,
                 config => config
                     .Where(where => where.WhereEquals(nameof(NavigationMenu.NavigationMenuCodeName), navigationMenuCodeName))
-                    .WithLinkedItems(2))
+                    .WithLinkedItems(2, options => options.IncludeWebPageData(true)))
             .InLanguage(preferredLanguageRetriever.Get());
 
 

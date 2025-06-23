@@ -4,9 +4,9 @@
     "net8.0": {
       "Kentico.Xperience.Core": {
         "type": "Direct",
-        "requested": "[30.6.0, )",
-        "resolved": "30.6.0",
-        "contentHash": "oHJca2Szbso7uPyZmj0NdBTMfKhnq5fUuL9TaUZNGWbrzjR7YUHf5QjinXJGoRaLa/bosvRvN3EE4t49XvRM6w==",
+        "requested": "[30.6.1, )",
+        "resolved": "30.6.1",
+        "contentHash": "2pXE4FLvh3L1C5dN40EGLaTDXQ4/x1nyWqIXePqT0VwvLqPJ8lCpFpVr0z55s35HU02tBK5eRfhcjw/1PzRpvQ==",
         "dependencies": {
           "AngleSharp": "0.17.1",
           "Kentico.Aira.Client": "3.5.0",

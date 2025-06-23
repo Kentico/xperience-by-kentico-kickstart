@@ -7,7 +7,7 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <PackageReference Include="Kentico.Xperience.Core" Version="30.6.0" />
+    <PackageReference Include="Kentico.Xperience.Core" Version="30.6.1" />
   </ItemGroup>
 
   <ItemGroup>

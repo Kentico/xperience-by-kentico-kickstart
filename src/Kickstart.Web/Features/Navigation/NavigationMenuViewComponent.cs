@@ -1,10 +1,7 @@
 using System.Linq;
 using System.Threading.Tasks;
 
-using CMS.ContentEngine;
-using CMS.Websites.Routing;
-
-using Kentico.Content.Web.Mvc.Routing;
+using Kentico.Content.Web.Mvc;
 
 using Microsoft.AspNetCore.Mvc;
 
@@ -12,20 +9,14 @@ namespace Kickstart.Web.Features.Navigation;
 
 public class NavigationMenuViewComponent : ViewComponent
 {
-    private readonly IContentQueryExecutor contentQueryExecutor;
-    private readonly IPreferredLanguageRetriever preferredLanguageRetriever;
-    private readonly IWebsiteChannelContext webSiteChannelContext;
+    private readonly IContentRetriever contentRetriever;
     private readonly INavigationService navigationService;
 
     public NavigationMenuViewComponent(
-        IContentQueryExecutor contentQueryExecutor,
-        IPreferredLanguageRetriever preferredLanguageRetriever,
-        IWebsiteChannelContext webSiteChannelContext,
+        IContentRetriever contentRetriever,
         INavigationService navigationService)
     {
-        this.contentQueryExecutor = contentQueryExecutor;
-        this.preferredLanguageRetriever = preferredLanguageRetriever;
-        this.webSiteChannelContext = webSiteChannelContext;
+        this.contentRetriever = contentRetriever;
         this.navigationService = navigationService;
     }
 
@@ -45,21 +36,17 @@ public class NavigationMenuViewComponent : ViewComponent
 
     private async Task<NavigationMenu> RetrieveMenu(string navigationMenuCodeName)
     {
-        var builder = new ContentItemQueryBuilder()
-            .ForContentType(NavigationMenu.CONTENT_TYPE_NAME,
-                config => config
-                    .Where(where => where.WhereEquals(nameof(NavigationMenu.NavigationMenuCodeName), navigationMenuCodeName))
-                    .WithLinkedItems(2, options => options.IncludeWebPageData(true)))
-            .InLanguage(preferredLanguageRetriever.Get());
-
-
-        var queryExecutorOptions = new ContentQueryExecutionOptions
+        var parameters = new RetrieveContentParameters
         {
-            ForPreview = webSiteChannelContext.IsPreview
+            LinkedItemsMaxLevel = 2
         };
+        var menus = await contentRetriever.RetrieveContent<NavigationMenu>(
+            parameters,
+            query => query
+                .Where(where => where.WhereEquals(nameof(NavigationMenu.NavigationMenuCodeName), navigationMenuCodeName)),
+            RetrievalCacheSettings.CacheDisabled
+            );
 
-        var items = await contentQueryExecutor.GetMappedResult<NavigationMenu>(builder, queryExecutorOptions);
-
-        return items.FirstOrDefault();
+        return menus.FirstOrDefault();
     }
 }

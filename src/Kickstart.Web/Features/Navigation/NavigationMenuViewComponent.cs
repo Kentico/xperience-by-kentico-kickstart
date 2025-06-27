@@ -10,15 +10,8 @@ namespace Kickstart.Web.Features.Navigation;
 public class NavigationMenuViewComponent : ViewComponent
 {
     private readonly IContentRetriever contentRetriever;
-    private readonly INavigationService navigationService;
 
-    public NavigationMenuViewComponent(
-        IContentRetriever contentRetriever,
-        INavigationService navigationService)
-    {
-        this.contentRetriever = contentRetriever;
-        this.navigationService = navigationService;
-    }
+    public NavigationMenuViewComponent(IContentRetriever contentRetriever) => this.contentRetriever = contentRetriever;
 
     public async Task<IViewComponentResult> InvokeAsync(string navigationMenuCodeName)
     {
@@ -29,7 +22,7 @@ public class NavigationMenuViewComponent : ViewComponent
             return View("~/Features/Navigation/NavigationMenuViewComponent.cshtml", new NavigationMenuViewModel());
         }
 
-        var model = navigationService.GetNavigationMenuViewModel(menu);
+        var model = NavigationMenuViewModel.GetViewModel(menu);
 
         return View("~/Features/Navigation/NavigationMenuViewComponent.cshtml", model);
     }

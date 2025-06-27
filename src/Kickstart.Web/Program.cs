@@ -3,7 +3,6 @@ using Kentico.PageBuilder.Web.Mvc;
 using Kentico.Web.Mvc;
 
 using Kickstart;
-using Kickstart.Web.Features.Navigation;
 
 using Microsoft.AspNetCore.Builder;
 using Microsoft.Extensions.DependencyInjection;
@@ -30,8 +29,6 @@ builder.Services.AddAuthentication();
 // builder.Services.AddAuthorization();
 
 builder.Services.AddControllersWithViews();
-
-builder.Services.AddSingleton<INavigationService, NavigationService>();
 
 var app = builder.Build();
 app.InitKentico();

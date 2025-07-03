@@ -11,11 +11,11 @@ It contains a simple navigation menu and two pages that utilize reusable content
 ### Dependencies
 
 - [ASP.NET Core 8.0](https://dotnet.microsoft.com/en-us/download)
-- [Xperience by Kentico 29.3.0](https://docs.kentico.com)
+- [Xperience by Kentico 30.6.0](https://docs.kentico.com)
 
 ## Quick Start
 
-1. Download and restore the **.bak** file from the [database](./database/) folder to your SQL server, or install a new Xperience by Kentico database, version **29.3.0**.
+1. Download and restore the **.bak** file from the [database](./database/) folder to your SQL server, or install a new Xperience by Kentico database, version **30.6.0**.
 1. Clone or download the repository and edit [appsettings.json](./src/Kickstart.Web/appsettings.json).
     - Add a `CMSConnectionString` property that points to your database to the `ConnectionStrings` section, e.g.:
       ```
@@ -24,7 +24,18 @@ It contains a simple navigation menu and two pages that utilize reusable content
       }
       ```
 1. Use the `dotnet run --kxp-ci-restore` command from the [Kickstart.Web](./src/Kickstart.Web/) directory to populate the database.
-1. Log in under the **~/admin** path with the username **administrator** and the password **kickstart**.
+1. Navigate to **~/admin** path and sign in with the username **administrator** and the password **kickstart**.
+1. Apply your license key to the instance:
+    1. Access the **Settings** application.
+    1. Paste your license key into the **License key** field under the **System → License** category and click **Save**.
+    ![Screenshot of Settings application](/images/SettingsApp.png)
+    ![Screenshot of license key settings](/images/SettingsLicense.png)
+
+> [!TIP]
+> You can obtain a license key from your agency, supervisor, or team lead.  
+> Alternatively, you can create an account at the [Client Portal](https://client.kentico.com/), and generate a [temporary key](https://client.kentico.com/evaluation-keys) valid for 30 days.  
+> Learn more about licensing in our [documentation](https://docs.kentico.com/developers-and-admins/installation/licenses).
+
 
 ## Contributing
 

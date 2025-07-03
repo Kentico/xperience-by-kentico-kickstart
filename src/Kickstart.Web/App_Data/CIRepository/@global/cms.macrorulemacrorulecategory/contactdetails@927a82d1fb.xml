@@ -27,10 +27,24 @@
         <ObjectType>cms.macrorule</ObjectType>
       </MacroRuleID>
     </Binding>
+    <Binding id="cms.macrorule_CMSContactFieldValueIsEmpty">
+      <MacroRuleID>
+        <CodeName>CMSContactFieldValueIsEmpty</CodeName>
+        <GUID>442fb8ba-33d7-4045-a7ed-520bf784cac8</GUID>
+        <ObjectType>cms.macrorule</ObjectType>
+      </MacroRuleID>
+    </Binding>
     <Binding id="cms.macrorule_CMSContactHasAgreedWithConsent">
       <MacroRuleID>
         <CodeName>CMSContactHasAgreedWithConsent</CodeName>
         <GUID>f01d1fdc-954b-41f7-affb-073993039369</GUID>
+        <ObjectType>cms.macrorule</ObjectType>
+      </MacroRuleID>
+    </Binding>
+    <Binding id="cms.macrorule_CMSContactHasBecomeMember">
+      <MacroRuleID>
+        <CodeName>CMSContactHasBecomeMember</CodeName>
+        <GUID>382b6b50-98f2-4202-bedd-16d937db4a72</GUID>
         <ObjectType>cms.macrorule</ObjectType>
       </MacroRuleID>
     </Binding>
@@ -69,10 +83,24 @@
         <ObjectType>cms.macrorule</ObjectType>
       </MacroRuleID>
     </Binding>
+    <Binding id="cms.macrorule_CMSContactIsInRecipientList">
+      <MacroRuleID>
+        <CodeName>CMSContactIsInRecipientList</CodeName>
+        <GUID>5539d2b6-6ea7-4d2f-94a0-c9d235e70e2b</GUID>
+        <ObjectType>cms.macrorule</ObjectType>
+      </MacroRuleID>
+    </Binding>
     <Binding id="cms.macrorule_CMSContactIsMale">
       <MacroRuleID>
         <CodeName>CMSContactIsMale</CodeName>
         <GUID>ce39a78c-339c-4be8-b355-70bd42eec51a</GUID>
+        <ObjectType>cms.macrorule</ObjectType>
+      </MacroRuleID>
+    </Binding>
+    <Binding id="cms.macrorule_CMSContactIsMember">
+      <MacroRuleID>
+        <CodeName>CMSContactIsMember</CodeName>
+        <GUID>55fcbe6d-de67-42ff-8e7e-f0cb385d6e01</GUID>
         <ObjectType>cms.macrorule</ObjectType>
       </MacroRuleID>
     </Binding>

@@ -1,0 +1,17 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<cms.allowedchildcontenttype>
+  <Parent>
+    <CodeName>Kickstart.LandingPage</CodeName>
+    <GUID>55e596be-07dc-4a33-876f-e5761b4a2d29</GUID>
+    <ObjectType>cms.contenttype</ObjectType>
+  </Parent>
+  <Bindings>
+    <Binding id="cms.contenttype_Kickstart.LandingPage">
+      <AllowedChildContentTypeChildID>
+        <CodeName>Kickstart.LandingPage</CodeName>
+        <GUID>55e596be-07dc-4a33-876f-e5761b4a2d29</GUID>
+        <ObjectType>cms.contenttype</ObjectType>
+      </AllowedChildContentTypeChildID>
+    </Binding>
+  </Bindings>
+</cms.allowedchildcontenttype>

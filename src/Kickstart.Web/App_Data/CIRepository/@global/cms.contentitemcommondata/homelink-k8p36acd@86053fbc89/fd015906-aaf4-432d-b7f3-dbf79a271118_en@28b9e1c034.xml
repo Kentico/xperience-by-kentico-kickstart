@@ -13,6 +13,21 @@
   <ContentItemCommonDataFirstPublishedWhen>2024-08-01 15:25:02Z</ContentItemCommonDataFirstPublishedWhen>
   <ContentItemCommonDataGUID>fd015906-aaf4-432d-b7f3-dbf79a271118</ContentItemCommonDataGUID>
   <ContentItemCommonDataIsLatest>True</ContentItemCommonDataIsLatest>
-  <ContentItemCommonDataLastPublishedWhen>2024-08-01 15:25:02Z</ContentItemCommonDataLastPublishedWhen>
+  <ContentItemCommonDataLastPublishedWhen>2025-06-23 16:31:59Z</ContentItemCommonDataLastPublishedWhen>
   <ContentItemCommonDataVersionStatus>2</ContentItemCommonDataVersionStatus>
+  <ContentItemReferences>
+    <cms.contentitemreference>
+      <ContentItemReferenceGroupGUID>64ca0a3f-d6b5-4e9d-b215-00a8123d2231</ContentItemReferenceGroupGUID>
+      <ContentItemReferenceGUID>6a730be9-8366-4999-937f-a19de7d0933b</ContentItemReferenceGUID>
+      <ContentItemReferenceSourceCommonDataID>
+        <GUID>fd015906-aaf4-432d-b7f3-dbf79a271118</GUID>
+        <ObjectType>cms.contentitemcommondata</ObjectType>
+      </ContentItemReferenceSourceCommonDataID>
+      <ContentItemReferenceTargetItemID>
+        <CodeName>Home-sqnkld86</CodeName>
+        <GUID>fb48a0ce-6c45-4580-a4f8-715413832d0f</GUID>
+        <ObjectType>cms.contentitem</ObjectType>
+      </ContentItemReferenceTargetItemID>
+    </cms.contentitemreference>
+  </ContentItemReferences>
 </cms.contentitemcommondata>

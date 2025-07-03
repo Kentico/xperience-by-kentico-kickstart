@@ -12,7 +12,6 @@
 using System;
 using System.Collections.Generic;
 using CMS.ContentEngine;
-using CMS.Websites;
 
 namespace Kickstart
 {
@@ -44,6 +43,6 @@ namespace Kickstart
 		/// <summary>
 		/// NavigationItemTarget.
 		/// </summary>
-		public IEnumerable<WebPageRelatedItem> NavigationItemTarget { get; set; }
+		public IEnumerable<LandingPage> NavigationItemTarget { get; set; }
 	}
 }

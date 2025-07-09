@@ -11,11 +11,11 @@ It contains a simple navigation menu and two pages that utilize reusable content
 ### Dependencies
 
 - [ASP.NET Core 8.0](https://dotnet.microsoft.com/en-us/download)
-- [Xperience by Kentico 30.6.0](https://docs.kentico.com)
+- [Xperience by Kentico 30.6.1](https://docs.kentico.com)
 
 ## Quick Start
 
-1. Download and restore the **.bak** file from the [database](./database/) folder to your SQL server, or install a new Xperience by Kentico database, version **30.6.0**.
+1. Download and restore the **.bak** file from the [database](./database/) folder to your SQL server, or install a new Xperience by Kentico database, version **30.6.1**.
 1. Clone or download the repository and edit [appsettings.json](./src/Kickstart.Web/appsettings.json).
     - Add a `CMSConnectionString` property that points to your database to the `ConnectionStrings` section, e.g.:
       ```

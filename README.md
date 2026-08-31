@@ -24,7 +24,7 @@ It contains a simple navigation menu and two pages that utilize reusable content
       }
       ```
 1. Use the `dotnet run --kxp-ci-restore` command from the [Kickstart.Web](./src/Kickstart.Web/) directory to populate the database.
-1. Navigate to **~/admin** path and sign in with the username **administrator** and the password **kickstart**.
+1. Navigate to **~/admin** path and sign in with the username `administrator` and the password `kickstart`.
 1. Apply your license key to the instance:
     1. Access the **Settings** application.
     1. Paste your license key into the **License key** field under the **System → License** category and click **Save**.

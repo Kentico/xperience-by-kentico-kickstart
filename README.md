@@ -10,7 +10,7 @@ It contains a simple navigation menu and two pages that utilize reusable content
 
 ### Dependencies
 
-- [ASP.NET Core 8.0](https://dotnet.microsoft.com/en-us/download)
+- [ASP.NET Core 10.0](https://dotnet.microsoft.com/en-us/download)
 - [Xperience by Kentico 31.8.2](https://docs.kentico.com)
 
 ## Quick Start

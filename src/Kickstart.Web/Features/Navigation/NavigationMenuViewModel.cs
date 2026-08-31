@@ -1,8 +1,6 @@
 using System.Collections.Generic;
 using System.Linq;
 
-using Microsoft.IdentityModel.Tokens;
-
 namespace Kickstart.Web.Features.Navigation;
 
 public class NavigationMenuViewModel
@@ -13,7 +11,7 @@ public class NavigationMenuViewModel
 
     public static NavigationMenuViewModel GetViewModel(NavigationMenu navigationMenu)
     {
-        if (navigationMenu?.NavigationMenuItems?.IsNullOrEmpty() ?? true)
+        if (navigationMenu?.NavigationMenuItems == null || !navigationMenu.NavigationMenuItems.Any())
         {
             return null;
         }

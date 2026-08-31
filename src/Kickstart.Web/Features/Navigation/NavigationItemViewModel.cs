@@ -2,8 +2,6 @@ using System.Linq;
 
 using CMS.Websites;
 
-using Microsoft.IdentityModel.Tokens;
-
 namespace Kickstart.Web.Features.Navigation;
 
 public class NavigationItemViewModel
@@ -14,7 +12,7 @@ public class NavigationItemViewModel
 
     public static NavigationItemViewModel GetViewModel(NavigationItem navigationItem)
     {
-        if (navigationItem?.NavigationItemTarget?.IsNullOrEmpty() ?? true)
+        if (navigationItem?.NavigationItemTarget == null || !navigationItem.NavigationItemTarget.Any())
         {
             return null;
         }

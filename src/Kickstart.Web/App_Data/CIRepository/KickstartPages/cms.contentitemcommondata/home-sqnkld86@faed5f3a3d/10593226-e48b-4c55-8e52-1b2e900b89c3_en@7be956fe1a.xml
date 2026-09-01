@@ -16,10 +16,54 @@
   <ContentItemCommonDataLastPublishedWhen>2024-08-01 16:12:10Z</ContentItemCommonDataLastPublishedWhen>
   <ContentItemCommonDataVersionStatus>2</ContentItemCommonDataVersionStatus>
   <ContentItemCommonDataVisualBuilderTemplateConfiguration>
-    <![CDATA[{"identifier":"Kickstart.LandingPagePageTemplate","properties":null,"fieldIdentifiers":{}}]]>
+<![CDATA[
+{
+  "identifier": "Kickstart.LandingPagePageTemplate",
+  "properties": null,
+  "fieldIdentifiers": {}
+}
+]]>
   </ContentItemCommonDataVisualBuilderTemplateConfiguration>
   <ContentItemCommonDataVisualBuilderWidgets>
-    <![CDATA[{"editableAreas":[{"identifier":"areaMain","sections":[{"identifier":"d3badc04-9e8a-4e78-9907-d9ec00c6b746","type":"Kentico.DefaultSection","properties":null,"zones":[{"identifier":"d5ef5871-c143-45b9-977c-004987a05e00","widgets":[{"identifier":"8c9d2b0e-71af-4f26-b868-8cc0dd245d84","type":"Kentico.Widget.RichText","variants":[{"identifier":"e4e7daaf-0976-4fb5-8766-619e41b1db5b","properties":{"content":"<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p><table style=\"width: 100%\"><tbody><tr><td style=\"width: 50%\"><strong>Lorem</strong></td><td style=\"width: 50%\"><strong>Ipsum</strong></td></tr><tr><td style=\"width: 50%\">ipsum</td><td style=\"width: 50%\">lorem</td></tr></tbody></table>"},"fieldIdentifiers":{"content":"43119ee6-a652-4bde-9aed-1972b7a9c294"}}]}]}],"fieldIdentifiers":{}}]}]}]]>
+<![CDATA[
+{
+  "editableAreas": [
+    {
+      "identifier": "areaMain",
+      "sections": [
+        {
+          "identifier": "d3badc04-9e8a-4e78-9907-d9ec00c6b746",
+          "type": "Kentico.DefaultSection",
+          "properties": null,
+          "zones": [
+            {
+              "identifier": "d5ef5871-c143-45b9-977c-004987a05e00",
+              "widgets": [
+                {
+                  "identifier": "8c9d2b0e-71af-4f26-b868-8cc0dd245d84",
+                  "type": "Kentico.Widget.RichText",
+                  "variants": [
+                    {
+                      "identifier": "e4e7daaf-0976-4fb5-8766-619e41b1db5b",
+                      "properties": {
+                        "content": "<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p><table style=\"width: 100%\"><tbody><tr><td style=\"width: 50%\"><strong>Lorem</strong></td><td style=\"width: 50%\"><strong>Ipsum</strong></td></tr><tr><td style=\"width: 50%\">ipsum</td><td style=\"width: 50%\">lorem</td></tr></tbody></table>"
+                      },
+                      "fieldIdentifiers": {
+                        "content": "43119ee6-a652-4bde-9aed-1972b7a9c294"
+                      }
+                    }
+                  ]
+                }
+              ]
+            }
+          ],
+          "fieldIdentifiers": {}
+        }
+      ]
+    }
+  ]
+}
+]]>
   </ContentItemCommonDataVisualBuilderWidgets>
   <ContentItemReferences>
     <cms.contentitemreference>

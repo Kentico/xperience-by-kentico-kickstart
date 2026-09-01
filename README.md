@@ -21,6 +21,7 @@ It contains a simple navigation menu and two pages that utilize reusable content
       ```
     This command automatically updates [appsettings.json](./src/Kickstart.Web/appsettings.json), setting the `CMSConnectionString` and `CMSHashStringSalt` values.
 1. Use the `dotnet run --kxp-ci-restore` command from the [Kickstart.Web](./src/Kickstart.Web/) directory to populate the database.
+1. Run the *Kickstart.Web* project.
 1. Navigate to **~/admin** path and sign in with the username `administrator` and the password you specified in the previous step.
 1. Apply your license key to the instance:
     1. Access the **Settings** application.

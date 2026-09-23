@@ -1,6 +1,7 @@
 ### XbK additions
 
 **/wwwroot/cache.json
+/.nuget-packages/
 
 ### Xbk additions end
 

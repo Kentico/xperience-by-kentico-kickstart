@@ -1,15 +1,15 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <cms.query>
   <ClassID>
-    <CodeName>cms.WebFarmTask</CodeName>
-    <GUID>44576ef8-a9b8-44e6-ba9d-4643f7de17cf</GUID>
+    <CodeName>CMS.WebPageUrlPath</CodeName>
+    <GUID>68de6e79-21cb-493e-98fb-b3d44d6e8cac</GUID>
     <ObjectType>cms.class</ObjectType>
   </ClassID>
   <QueryConnectionString>CMSConnectionString</QueryConnectionString>
-  <QueryGUID>f92eb1cd-4e1e-414e-a6fe-eeca56955865</QueryGUID>
+  <QueryGUID>afbd4090-9090-4f15-a195-48aeb5ec934b</QueryGUID>
   <QueryIsCustom>False</QueryIsCustom>
-  <QueryName>InsertServerBindings</QueryName>
+  <QueryName>UpsertVanityUrlPaths</QueryName>
   <QueryRequiresTransaction>False</QueryRequiresTransaction>
-  <QueryText>Proc_CMS_WebFarmServerTasks_Insert</QueryText>
+  <QueryText>Proc_CMS_WebPageUrlPath_UpsertVanityUrlPaths</QueryText>
   <QueryTypeID>1</QueryTypeID>
 </cms.query>
